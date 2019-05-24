@@ -1,21 +1,30 @@
 .App {
   text-align: center;
   background: #afd4c0;
-  height: 100vh;
+  height: 100%;
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
 }
 .body{
   margin: 0;
 }
 
 .listing{
-  height: 120px;
-  width: 250px;
-  background: #dedede
+  height: 150px;
+  width: 675px;
+  background: #dedede;
+  margin: 10px;
+}
+
+.listing h5 {
+  margin: 2px;
 }
 
 .header{
   background: #519872;
   height: 120px;
+  width: 100%;
   color: white;
   margin: 0;
   display: flex;
@@ -23,9 +32,16 @@
 }
 
 .dashboard{
-  background: #afd4c0
+  width: 700px;
+  background: #e5f4ec;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wizard{
-  background: #afd4c0
+  width: 700px;
+  background: #e5f4ec;
+  height: 100vh;
 }

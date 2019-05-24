@@ -17,6 +17,8 @@ app.use(session({
 }))
 
 app.get('/api/houses', house_ctrl.getHouses)
+app.post('/api/add', house_ctrl.addHouse)
+app.post('/api/delete/:id', house_ctrl.deleteHouse)
 
 massive(CONNECTION_STRING).then(db => {
     app.set('db', db)
